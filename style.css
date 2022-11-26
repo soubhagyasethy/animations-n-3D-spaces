@@ -1,5 +1,57 @@
-#div{
-    height: 5rem;
-    width: 5rem;
-    background-color: lightsalmon;
+/* div element */
+div {
+    margin: 100px;
+    width: 50px;
+    background-color: bisque;
+    height: 50px;
+    transition: 1s ease-in;
 }
+/* You can visually manipulate an element using the CSS transform property.
+It has the following methods:
+● translate()
+● rotate()
+● scale()
+● skew()
+● matrix() */
+
+
+div:hover {
+    /* transform: translate(50px, 100px); */
+    /* transform: rotate(100deg); */
+    /* transform: scale(3,5); */
+    /* transform: scale(2); */
+    /* transform: skew(20deg, 100deg); */
+    /* transform: matrix(2,0,1,2,10,0); */
+}
+
+/*animation 1 */
+
+/* div:hover {
+    transform: translateX(200px) scale(2);
+} */
+
+/* div:hover {
+    transform: rotate(360deg) translateX(20px) scale(0.75);
+    border-radius: 50%;
+} */
+
+/* animation 2 */
+@keyframes changeShape {
+    from {
+    border-radius: 0%;
+    }
+    to {
+    border-radius: 50%;
+    }
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    animation-name: changeShape;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
